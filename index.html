@@ -1,0 +1,42 @@
+<!-- Ülesanne 1: Esialgne ülesande seadistus (1 tund)
+Loo HTML-leht koos järgmiste elementidega:
+1. Tekstiväli, kuhu kasutaja saab ülesande kirja panna.
+2. Nupp, millega saab ülesande lisada.
+3. Tühja loendi ala, kuhu ilmuvad kasutaja poolt lisatud ülesanded. -->
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Lisa uus ülesanne">
+        <button id="addTaskButton">Lisa</button>
+
+        <!-- Ülesanne 3: Täitmise ja sorteerimise funktsioonid 
+        Sorteerimisnupp ja võimalused ülesandeid sorteerida täidetud ja täitmata järjekorras -->
+        <select id="sortOptions">
+            <option value="default" selected hidden>Sorteeri (Default)</option>
+            <option value="incomplete_first">Esimesena täitmata</option>
+            <option value="completed_first">Esimesena täidetud</option>
+        </select>
+
+        <!-- Ülesanne 4: Ülesannete filtreerimine 
+        Filtreerimisnupp ülesannete oleku järgi -->
+        <select id="filterOptions">
+            <option value="all" selected hidden>Filtreeri (Kõik)</option>
+            <option value="completed">Ainult täidetud ülesanded</option>
+            <option value="incomplete">Ainult täitmata ülesanded</option>
+        </select>
+
+        <ul id="taskList"></ul>
+        <p id="completedCount">Täidetud ülesanded: 0</p>
+        <button id="deleteAllButton">Kustuta kõik ülesanded</button>
+    </div>
+    <script src="script.js"></script> <!-- Lingin JavaScript failiga -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Ülesanne 1 - Lehe üldine välimus, nupud */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ebe1ed;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button, select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ce92c7;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e88bc9; /* Roosa taust */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #d372b3; /* Tumedam roosa hoveri jaoks */
+}
+
+ul {
+    list-style-type: none; /* Eemaldan bulletid */
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+/* Hall strikethrough, ainult span elementidele */
+.completed span {
+    text-decoration: line-through; 
+    color: gray;
+}
